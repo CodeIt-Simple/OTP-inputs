@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #121212;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: auto;
+}
+
+.inputContainer input {
+  max-width: 15%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.inputContainer input::-webkit-inner-spin-button,
+.inputContainer input::-webkit-outer-spin-button {
+  display: none;
+}
+
+.inputContainer input:focus {
+  outline: 1.5px solid #00b991;
+  outline-offset: 2px;
+}
+
+form button {
+  width: 92%;
+  margin-top: 1.5rem;
+  color: #525252;
+  font-size: 1rem;
+  padding: 10px 0;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background-color: #e9d585;
+  transition: all 0.2s ease;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+form button.active{
+    background-color: #ffcc00;
+    color: #000000;
+    pointer-events: auto;
+}
+form button:hover{
+    background-color: #e6b801;
+}
